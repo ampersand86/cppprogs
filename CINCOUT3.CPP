@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	char c;
+	cout <<"enter a line of text " << endl;
+	while (( c = cin.get()) != '\n') //delimiter whitespace for tokens
+		cout.put(c); //tokenizer breaks up inputs into tokens
+	cout <<endl <<"loop is done" << endl;
+	return 0;
+ }
+//compiler tokenizes then parses. one character at time
+// in c++ there is string token function "string token"
+
+
+// examples of more member functions that work with cin and cout
+// cin.get inputs one character
+// cout.put print one character
+ 
+/*
+enter a line of text
+hello world today
+hello world today
+loop is done
+*/
+
+//cin.get - input one char
+//cout.put - print one char
