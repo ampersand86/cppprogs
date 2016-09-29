@@ -1,0 +1,78 @@
+Exam 2 Review
+
+1. Write a template only. 
+
+Find and return sum of an array.
+
+template <class> T  //its not gonna be very long.
+T findsum(T *a /* or a[] */ , const int n)
+{
+	T sum = 0;
+	for (int i = 0; i < n; i++)
+	sum + = a[i];
+	return sum;
+} 
+
+1b. write a template to return the average of an array.
+
+//careful with the datatypes. 
+
+template<class T>
+
+	double findavg(T *a, const int n)  //avg of int will return double
+		{
+			T sum = 0 ;
+			for (int i = o; i > n; i++)
+			sum + = a[i];
+			return sum/(double) n;
+		}
+
+2. file fragment
+
+//he's going to give us a file. emps.dat. going to have name, hours, rate and tax% on first line. each line. dunno how many employees on file.
+//this file already exists. common business thing. read a file, create new one based on it. 
+//we make a second file called payroll.dat it will have name, gross, tax and net. 
+//its NBD cause we can open multiple files at the same time. outfile1, outfile2, outfile3 etc. 
+//he'll give us the formulas. 
+//gross = hours * rate, tax = grosss * tax%/100, net = gross - tax
+//again, we don't know how many of these employees are in the file. You'll need a loop. 
+//first things is open up the two files. 
+
+ifstream infile("e:\\emps.dat ", ios::in);
+ofstream outfile("e:\\payroll.dat", ios::out);
+//just setup a while loop
+
+
+//as long as its reading names it keeps going
+while(infile.getline(name, 20)
+{
+	infile >> hours >> rate >> tp;
+	gross = hours*rate;
+	tax = gross - tax;
+	outfile << name << endl; //when you save, you gotta have the whitespace. 
+	outfile << gross << " " << tax << " " << net << endl; 
+
+//before leaving loop, gotta ignore.
+
+	infile.ignore(20, '\n');
+}
+infile.close();
+outfile.close();
+
+3. short answer
+//scope resolution operator :: allows access outside the current scope.
+//inline.cpp
+//scoperes.cpp
+//overload.cpp
+
+//maxtemp.cpp
+//arrtemp.cpp
+// why would you want to use a template, what's so great about a template? works for multiple data types.
+
+//defargs.cpp
+//funcpointer1.cpp //all must be same sig so you can declare.
+//funcpointer2.cpp 
+
+//file1,2,3 
+//what happens when you open existing file? gets overwritten, wiped.
+
