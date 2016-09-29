@@ -7,9 +7,25 @@ using namespace std;
 // public: the data member can be accessed anywhere
 // private: the data member can only be accessed in the class code
 // protected: will do later for inheritance of objects
+//the whole point of oop is resuable code.
+//RAD - rapid application development.
+
+//class - program code for an object.
+//its common to put the class into a header file.
+//why object are so "booling?"
+//if you remember in C, we did structs. a structure is a collection of data types. example: 5 data members. name, a1, a2, a3, avg.
+//this time, in an object, we still have the data members. still 5 data members.  but....we also put some functionality in there
+//we put some methods in  there. load(), calc(), print(). All a method is is a fucntion within an object.
+//Encapsulation. 
+//we are going to encapsulate the data members and the methods into the object. what encapsulate means:: put within. 
+
+//access specifier
+//public: can be accessed anywhere.
+//private: can only be accessed in the methods. 
+//protected: for inheritance. when one class inherits from another. 
 
 class Student
-{
+{ //data members only atm. 
 	public:
 		char name[20];
 		int test1, test2, test3;
